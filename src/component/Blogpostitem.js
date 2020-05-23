@@ -1,16 +1,12 @@
 import React from "react";
 
-const Blogpostitem = () => {
+const Blogpostitem = (props) => {
   return (
     <div>
-      <div class="card mb-4">
-        <div class="card-header">This is blog post 1.</div>
-        <div class="card-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          eveniet temporibus hic ratione quas dignissimos quis iure, repudiandae
-          dicta adipisci!
-        </div>
-        <div class="card-footer">
+      <div className="card mb-4">
+        <div className="card-header">{props.singlePost.title}</div>
+        <div className="card-body">{props.singlePost.body}</div>
+        <div className="card-footer">
           <a href="#!" className="btn btn-primary">
             Read More.
           </a>
